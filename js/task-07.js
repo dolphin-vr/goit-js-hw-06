@@ -9,4 +9,4 @@ function changeFont(e){
    refs.spanText.style.fontSize = e.currentTarget.value + 'px'
 }
 
-refs.inputValue.addEventListener('change', changeFont);
+refs.inputValue.addEventListener('input', changeFont);
