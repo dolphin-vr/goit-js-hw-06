@@ -22,4 +22,4 @@ const list =ingredients.map(el =>{
 });
 
 const ulIngridRef = document.querySelector('#ingredients');
-ulIngrid.append(...list);
+ulIngridRef.append(...list);
