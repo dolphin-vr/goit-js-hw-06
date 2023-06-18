@@ -27,6 +27,6 @@ const listRef = document.querySelector('#categories');
 console.log('Number of categories: ', listRef.children.length);
 
 [...listRef.children].forEach(el => {
-   console.log('\nCategory: ', el.children[0].outerText);
-   console.log('Elements: ', el.children[1].children.length);
+   console.log('\nCategory: ', el.firstElementChild.outerText);
+   console.log('Elements: ', el.lastElementChild.children.length);
 });
