@@ -2,7 +2,7 @@
 
 const textInput = document.querySelector("#validation-input");
 const inputBlur = (e)=> {
-   if (e.currentTarget.value.length===6){
+   if (e.currentTarget.value.length===Number(e.currentTarget.dataset.length)){
       textInput.classList.add('valid');
       textInput.classList.remove('invalid');
    }else{
